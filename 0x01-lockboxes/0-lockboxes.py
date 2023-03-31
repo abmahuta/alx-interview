@@ -2,6 +2,7 @@
 '''A program that checks if all lockedboxes can be unlocked.
 '''
 
+
 def canUnlockAll(boxes):
     '''Checks if all the boxes in a list of boxes containing the keys
     (indices) to other boxes can be unlocked given that the first
@@ -18,4 +19,3 @@ def canUnlockAll(boxes):
             unseen_boxes.extend(boxes[boxIdx])
             seen_boxes.append(boxIdx)
     return n == len(seen_boxes)
-
